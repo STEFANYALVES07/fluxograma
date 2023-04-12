@@ -1,0 +1,50 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE-edge">
+	 <meta neme="viewport" content="width=device-width, initial-scale=1.0">
+	 <title>fluxograma</title>
+</head>
+<script>
+     function enquanto() {
+    var email;
+    var senha;
+    var recorrente;
+    
+    recorrente = true;
+    while (recorrente == true) {
+        email = window.prompt('Enter a value for email');
+        senha = window.prompt('Enter a value for senha');
+        if (email == "stefany@gmail.com") {
+            if (senha == "1234") {
+                window.alert("Parabéns, você esta logado!");
+                recorrente = false;
+            }
+        }
+    }
+}
+
+function faça() {
+    var email;
+    var senha;
+    var recorrente;
+    
+    recorrente = true;
+    do {
+        email = window.prompt('Enter a value for email');
+        senha = window.prompt('Enter a value for senha');
+        if (email == "stefany@gmail.com") {
+            if (senha == "1234") {
+                window.alert("Parabéns, você esta logado!");
+                recorrente = false;
+            }
+        }
+    } while (recorrente == true);
+}
+</script>
+<body>
+<button onclick="enquanto()">ENQUANTO</button>
+<button onclick="faça()">FAÇA</button>
+</body>
+</html>
