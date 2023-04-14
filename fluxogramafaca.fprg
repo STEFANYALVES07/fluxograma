@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-12 01:42:32 "/>
+        <attribute name="created" value="QUxVTk87RUNFNDM2TUlDUk8yNjsyMDIzLTA0LTEyOyIxMjoyNzo1NyAiOzI0MjA="/>
+        <attribute name="edited" value="QUxVTk87RUNFNDM2TUlDUk8yNjsyMDIzLTA0LTEyOyIwMTo0MjozMiAiOzU7MjUyMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="email" type="String" array="False" size=""/>
+            <declare name="senha" type="String" array="False" size=""/>
+            <declare name="recorrente" type="Boolean" array="False" size=""/>
+            <assign variable="recorrente" expression="true"/>
+            <do expression="recorrente==true">
+                <input variable="email"/>
+                <input variable="senha"/>
+                <if expression="email==&quot;stefany@gmail.com&quot;">
+                    <then>
+                        <if expression="senha==&quot;1234&quot;">
+                            <then>
+                                <output expression="&quot;Parab&#233;ns, voc&#234; esta logado!&quot;" newline="True"/>
+                                <assign variable="recorrente" expression="false"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+            </do>
+        </body>
+    </function>
+</flowgorithm>
